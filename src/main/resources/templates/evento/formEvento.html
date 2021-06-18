@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://thymeleaf.org"
+xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Formulário de cadastro</title>
+</head>
+<body>
+    <h2>Cadastrar Evento</h2>
+
+
+    <form method="post">
+        <div class="form-group">
+                <label>Nome</label>
+                <input class="form-control" type="text" value="" name="nome"/>
+                <label>Local</label>
+                <input class="form-control" type="text" value="" name="local"/>
+                <label>Data</label>
+                <input class="form-control" type="date" value="" name="data"/>
+                <label>Horário</label>
+                <input class="form-control" type="time" value="" name="horario"/>
+        </div>
+
+        <button type="submit" class="btn btn-primary"> Salvar </button>
+        <a href="/index" class="btn btn-danger"> Voltar </a>
+    </form>
+</body>
+</html>
