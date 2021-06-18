@@ -10,20 +10,32 @@ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
     <h2>Cadastrar Evento</h2>
 
 
-    <form method="post">
+    <form method="post" class="container">
         <div class="form-group">
-                <label>Nome</label>
-                <input class="form-control" type="text" value="" name="nome"/>
-                <label>Local</label>
-                <input class="form-control" type="text" value="" name="local"/>
-                <label>Data</label>
-                <input class="form-control" type="date" value="" name="data"/>
-                <label>Horário</label>
-                <input class="form-control" type="time" value="" name="horario"/>
+            <div class="form-row">
+                <div class="col">
+                    <label>Nome</label>
+                    <input class="form-control" type="text" value="" name="nome"/>
+                </div>
+                <div class="col">
+                    <label>Local</label>
+                    <input class="form-control" type="text" value="" name="local"/>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col">
+                    <label>Data</label>
+                    <input class="form-control" type="date" value="" name="data"/>
+                </div>
+                <div class="col">
+                    <label>Horário</label>
+                    <input class="form-control" type="time" value="" name="horario"/>
+                </div>
+            </div>
         </div>
 
         <button type="submit" class="btn btn-primary"> Salvar </button>
-        <a href="/index" class="btn btn-danger"> Voltar </a>
+        <a href="/" class="btn btn-danger"> Voltar </a>
     </form>
 </body>
 </html>
